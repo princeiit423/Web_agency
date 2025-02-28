@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-6 md:px-16 py-6 bg-white">
+        <div class="text-xl font-bold flex items-center space-x-2">
+            <span class="text-black">Canvix</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="/" class="text-black">Home</a>
+            <a href="/about" class="text-black">About</a>
+            <a href="/contact" class="text-black">Contact Us</a>
+        </nav>
+        <button class="px-4 py-2 border border-white rounded-full text-white bg-black hover:bg-gray-800 transition">
+            Get in touch
+        </button>
+    </header>
+
+    <section class="px-6 md:px-16 py-12">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Left Section -->
+            <div>
+                <h2 class="text-4xl font-bold text-black">Let’s talk</h2>
+                <p class="text-gray-600 mt-4">
+                    We collaborate with thousands of creators, entrepreneurs, and complete legends.
+                </p>
+    
+                <div class="mt-6 space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-envelope text-black"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Our email</p>
+                            <p class="text-gray-600">hello@example.com</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-phone text-black"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Call us</p>
+                            <p class="text-gray-600">+123 456 7892</p>
+                        </div>
+                    </div>
+    
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-gray-200 rounded-full">
+                            <i class="fa-solid fa-map-marker-alt text-black"></i>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Find us</p>
+                            <p class="text-gray-600">Open Google Maps</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Social Links -->
+                <div class="mt-6 flex space-x-6">
+                    <a href="#" class="text-black text-xl"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-black text-xl"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-black text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="First name" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input type="text" placeholder="Last name" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input type="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input type="tel" placeholder="Phone" class="p-3 border border-gray-300 rounded-md w-full">
+                    <textarea placeholder="Message" class="p-3 border border-gray-300 rounded-md w-full col-span-2"></textarea>
+                    <button class="px-6 py-3 bg-black text-white rounded-md col-span-2 hover:bg-gray-800 transition">
+                        Submit Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Google Map -->
+        <div class="mt-12">
+            <iframe class="w-full h-72 rounded-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24197.297227033714!2d-74.0060154!3d40.7127764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMzUuNyJX!5e0!3m2!1sen!2sus!4v1634243476736"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">&#9711;</span> Canvix
+                </h2>
+                <p class="mt-3 text-gray-400">
+                    We're a team of strategic creators and digital innovators, united in our pursuit of mastery and joy.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/contact" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="/portfolio" class="hover:text-white">Portfolio</a></li>
+                   </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Utility Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Style Guide</a></li>
+                    <li><a href="#" class="hover:text-white">Instruction</a></li>
+                    <li><a href="#" class="hover:text-white">License</a></li>
+                    <li><a href="#" class="hover:text-white">Changelog</a></li>
+                    <li><a href="#" class="hover:text-white">Error 404</a></li>
+                    <li><a href="#" class="hover:text-white">Password Protected</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Subscribe</h3>
+                <div class="mt-3 flex bg-white rounded-full overflow-hidden">
+                    <input type="email" placeholder="Enter your email here" class="px-4 py-2 text-black w-full outline-none">
+                    <button class="px-5 py-2 m-1 bg-gray-900 text-white rounded-full">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 border-t border-gray-700 pt-6 text-gray-400 text-sm text-center md:text-left px-6">
+            <div class="flex flex-col md:flex-row md:justify-between gap-6">
+                <p>Designed by VevTech</p>
+                <p>Contact Us: +918252410023</p>
+                <p>Address: Rospa Tower, Ranchi, Jharkhand, India</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

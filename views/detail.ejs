@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header class="flex justify-between items-center px-6 md:px-16 py-6 bg-white">
+        <div class="text-xl font-bold flex items-center space-x-2">
+            <span class="text-black">Canvix</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="/" class="text-black">Home</a>
+            <a href="/about" class="text-black">About</a>
+            <a href="/contact" class="text-black">Contact Us</a>
+        </nav>
+        <button href="/contact" class="px-4 py-2 border border-white rounded-full text-white bg-black hover:bg-gray-800 transition">
+            Get in touch
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="px-6 md:px-16 py-10">
+        <div class="relative max-w-6xl mx-auto">
+            <img src="Rectangle 2.png" alt="Hero Image" class="w-full rounded-xl shadow-lg">
+            
+            <!-- Floating Info Cards -->
+            <div class="absolute bottom-0 left-0 w-full flex flex-wrap justify-center gap-4 p-4">
+                <div class="bg-black text-white px-4 py-2 rounded-lg text-center">
+                    <span class="font-bold">Category :</span>
+                    <p>Cloud Solution</p>
+                </div>
+                <div class="bg-black text-white px-4 py-2 rounded-lg text-center">
+                    <span class="font-bold">Client</span>
+                    <p>BrightMedia Solutions</p>
+                </div>
+                <div class="bg-black text-white px-4 py-2 rounded-lg text-center">
+                    <span class="font-bold">Date :</span>
+                    <p>August 03, 2023</p>
+                </div>
+                <div class="bg-black text-white px-4 py-2 rounded-lg text-center">
+                    <span class="font-bold">Location:</span>
+                    <p>489 Depot Road Midland</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto space-y-10 px-6 md:px-10 py-10">
+        
+        <!-- Challenge -->
+        <div>
+            <h2 class="text-lg font-bold">01. The Challenge</h2>
+            <p class="text-gray-700 mt-2">
+                When our power of choice is untrammeled and when nothing prevents us from being able to do what we like best, every pleasure is to be welcomed and every pain avoided. 
+                But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted.
+            </p>
+        </div>
+
+        <!-- Solution -->
+        <div>
+            <h2 class="text-lg font-bold">02. The Solution</h2>
+            <p class="text-gray-700 mt-2">
+                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestias non recusandae.
+            </p>
+            <p class="text-gray-700 mt-2 italic">
+                One who avoids a pain that produces no resultant pleasure.<br>
+                Laborious physical exercise.<br>
+                One who avoids a pain that produces no resultant pleasure.<br>
+                Which of us ever undertakes laborious physical exercise?<br>
+                Avoids pleasure itself, because it is.
+            </p>
+        </div>
+
+        <!-- Result -->
+        <div>
+            <h2 class="text-lg font-bold">03. The Result</h2>
+            <p class="text-gray-700 mt-2">
+                Because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. 
+                To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?
+            </p>
+            <p class="text-gray-700 mt-2">
+                When our power of choice is untrammeled and when nothing prevents us from being able to do what we like best, every pleasure is to be welcomed and every pain avoided.
+            </p>
+        </div>
+
+        <!-- Image Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <img src="Rectangle 20.png" alt="Abstract Art 1" class="w-full rounded-lg shadow-md">
+            <img src="Rectangle 20.png" alt="Abstract Art 2" class="w-full rounded-lg shadow-md">
+            <img src="Rectangle 20.png" alt="Abstract Art 3" class="w-full rounded-lg shadow-md">
+        </div>
+
+    </section>
+
+    <section class="max-w-6xl mx-auto text-center mb-10">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold mb-8 p-6">Recent Projects</h2>
+
+        <!-- Project Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            
+            <!-- Card 1 -->
+            <a href="your-target-page.html" class="space-y-2 block">
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="Rectangle 20.png" alt="To design Digital Strategy" class="rounded-xl w-full transition-transform duration-300 group-hover:scale-105">
+                    
+                    <!-- Hover Effect (Arrow with Circle on Image Only) -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center">
+                            <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Text Section (No Hover Effect) -->
+                <h3 class="text-lg font-semibold">To design Digital Strategy</h3>
+                <p class="text-gray-500">Social Media Marketing</p>
+            </a>
+            
+
+            <!-- Card 2 -->
+            <a href="your-target-page.html" class="space-y-2 block">
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="Rectangle 20.png" alt="To design Digital Strategy" class="rounded-xl w-full transition-transform duration-300 group-hover:scale-105">
+                    
+                    <!-- Hover Effect (Arrow with Circle on Image Only) -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center">
+                            <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Text Section (No Hover Effect) -->
+                <h3 class="text-lg font-semibold">To design Digital Strategy</h3>
+                <p class="text-gray-500">Social Media Marketing</p>
+            </a>
+            
+            <!-- Card 3 -->
+            <a href="your-target-page.html" class="space-y-2 block">
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="Rectangle 20.png" alt="To design Digital Strategy" class="rounded-xl w-full transition-transform duration-300 group-hover:scale-105">
+                    
+                    <!-- Hover Effect (Arrow with Circle on Image Only) -->
+                    <div class="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div class="w-12 h-12 bg-white rounded-full flex justify-center items-center">
+                            <svg class="w-6 h-6 text-black" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Text Section (No Hover Effect) -->
+                <h3 class="text-lg font-semibold">To design Digital Strategy</h3>
+                <p class="text-gray-500">Social Media Marketing</p>
+            </a>
+            
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">&#9711;</span> Canvix
+                </h2>
+                <p class="mt-3 text-gray-400">
+                    We're a team of strategic creators and digital innovators, united in our pursuit of mastery and joy.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/contact" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="/portfolio" class="hover:text-white">Portfolio</a></li>
+                   </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Utility Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Style Guide</a></li>
+                    <li><a href="#" class="hover:text-white">Instruction</a></li>
+                    <li><a href="#" class="hover:text-white">License</a></li>
+                    <li><a href="#" class="hover:text-white">Changelog</a></li>
+                    <li><a href="#" class="hover:text-white">Error 404</a></li>
+                    <li><a href="#" class="hover:text-white">Password Protected</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Subscribe</h3>
+                <div class="mt-3 flex bg-white rounded-full overflow-hidden">
+                    <input type="email" placeholder="Enter your email here" class="px-4 py-2 text-black w-full outline-none">
+                    <button class="px-5 py-2 m-1 bg-gray-900 text-white rounded-full">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 border-t border-gray-700 pt-6 text-gray-400 text-sm text-center md:text-left px-6">
+            <div class="flex flex-col md:flex-row md:justify-between gap-6">
+                <p>Designed by Vevtech</p>
+                <p>Contact Us: +918252410023</p>
+                <p>Address: Rospa Tower, Ranchi, Jharkhand, India</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
