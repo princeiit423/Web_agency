@@ -75,12 +75,12 @@
     
             <!-- Right Section -->
             <div class="bg-gray-100 p-6 rounded-lg">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="First name" class="p-3 border border-gray-300 rounded-md w-full">
-                    <input type="text" placeholder="Last name" class="p-3 border border-gray-300 rounded-md w-full">
-                    <input type="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md w-full">
-                    <input type="tel" placeholder="Phone" class="p-3 border border-gray-300 rounded-md w-full">
-                    <textarea placeholder="Message" class="p-3 border border-gray-300 rounded-md w-full col-span-2"></textarea>
+                <form action="/contact" method="post"  class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input name="first" type="text" placeholder="First name" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input name="second" type="text" placeholder="Last name" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input name="email" type="email" placeholder="Email" class="p-3 border border-gray-300 rounded-md w-full">
+                    <input name="phone" type="tel" placeholder="Phone" class="p-3 border border-gray-300 rounded-md w-full">
+                    <textarea name="message" placeholder="Message" class="p-3 border border-gray-300 rounded-md w-full col-span-2"></textarea>
                     <button class="px-6 py-3 bg-black text-white rounded-md col-span-2 hover:bg-gray-800 transition">
                         Submit Now
                     </button>
