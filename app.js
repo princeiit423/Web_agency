@@ -6,10 +6,12 @@ const ejsMate= require("ejs-mate");
 const bodyParser= require("body-parser");
 const Contact= require("./models/contact.js");
 const Subscriber= require("./models/subscribe.js");
+const dotenv= require("dotenv");
 const app = express();
+dotenv.config();
 
 
-const port= 4000;
+const port= process.env.PORT || 4000;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -19,7 +21,13 @@ app.use(express.json());
 app.engine("ejs", ejsMate);
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect("mongodb://localhost:27017/agencyDB", {useNewUrlParser: true, useUnifiedTopology: true})
+try {
+    mongoose.connect(process.env.DBURL,
+        {useNewUrlParser: true, useUnifiedTopology: true})
+} catch (error) {
+    next(error);
+}
+
 app.get("/",(req,res)=>{
     try {
         res.render("home.ejs");
@@ -66,7 +74,7 @@ app.get("/detail",(req,res)=>{
 app.post("/subscribe",async(req,res,next)=>{
     // ye functionality work nhi kr rha hai
     const {email}= req.body;
-    console.log(email);
+    //console.log(email);
     const query= await new Subscriber({email});
     await query.save();
     res.redirect("/");
