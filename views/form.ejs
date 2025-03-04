@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Agency Inquiry Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <header class="flex justify-between items-center px-6 md:px-16 py-6">
+        <div class="text-xl font-bold flex items-center space-x-2">
+            <span class="text-white">⚪ WebWiz</span>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+            <a href="/" class="text-gray-300 hover:text-white">Home</a>
+            <a href="/portfolio" class="text-gray-300 hover:text-white">Portfolio</a>
+            <a href="/contact" class="text-gray-300 hover:text-white">Contact Us</a>
+        </nav>
+        <a href="/contact">
+        <button  class="px-4 py-2 border border-white rounded-full text-white hover:bg-white hover:text-black transition">
+            Get in touch
+        </button>
+    </a>
+    </header>
+
+
+    <div class="flex items-center justify-center min-h-screen p-4 mb-6">
+        <div class="w-full max-w-3xl bg-gray-900 p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-bold text-green-400 text-center mb-6">Web Agency Inquiry Form</h2>
+
+            <form action="/form" method="POST" class="space-y-6">
+                
+                <!-- Name -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Full Name</label>
+                    <input name="fullName" type="text" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Email Address</label>
+                    <input name="email" type="email" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Phone -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Phone Number</label>
+                    <input name="phone" type="tel" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Website URL -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Website URL (if any)</label>
+                    <input name="website" type="url" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none" placeholder="Enter your website URL">
+                </div>
+
+                <!-- Project Type -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Project Type</label>
+                    <select name="projectType" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none">
+                        <option value="website-design">Website Design</option>
+                        <option value="seo">SEO Optimization</option>
+                        <option value="branding">Branding & Graphics</option>
+                        <option value="ecommerce">E-Commerce Development</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Budget -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Estimated Budget</label>
+                    <input name="budget" type="number" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none" placeholder="Enter your budget">
+                </div>
+
+                <!-- Project Description -->
+                <div>
+                    <label class="block text-white text-sm font-semibold mb-2">Project Description</label>
+                    <textarea name="description" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-green-400 focus:ring-green-400 focus:ring-1 outline-none h-32 resize-none" placeholder="Describe your project"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="w-full py-3 rounded-lg bg-green-500 hover:bg-green-600 text-white font-semibold text-lg transition duration-300">Submit Inquiry</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-xl font-bold flex items-center gap-2">
+                    <span class="text-3xl">&#9711;</span> WebWiz
+                </h2>
+                <p class="mt-3 text-gray-400">
+                    We're a team of strategic creators and digital innovators, united in our pursuit of mastery and joy.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/contact" class="hover:text-white">Contact Us</a></li>
+                    <li><a href="/portfolio" class="hover:text-white">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold">Utility Pages</h3>
+                <ul class="mt-3 space-y-2 text-gray-400">
+                    <li><a href="#" class="hover:text-white">Style Guide</a></li>
+                    <li><a href="#" class="hover:text-white">Instruction</a></li>
+                    <li><a href="#" class="hover:text-white">License</a></li>
+                    <li><a href="#" class="hover:text-white">Changelog</a></li>
+                    <li><a href="#" class="hover:text-white">Error 404</a></li>
+                    <li><a href="#" class="hover:text-white">Password Protected</a></li>
+                </ul>
+            </div>
+            <div>
+                <form action="/subscribe" method="post">
+                <h3 class="text-lg font-semibold">Subscribe</h3>
+                <div class="mt-3 flex bg-white rounded-full overflow-hidden">
+                    
+                    <input name="email" type="email" placeholder="Enter your email here" class="px-4 py-2 text-black w-full outline-none">
+                    <button class="px-5 py-2 m-1 bg-gray-900 text-white rounded-full">Subscribe</button>                        
+                </form>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="mt-10 border-t border-gray-700 pt-6 text-gray-400 text-sm text-center md:text-left px-6">
+            <div class="flex flex-col md:flex-row md:justify-between gap-6">
+                <p>Designed by WebWiz</p>
+                <p>Contact Us: +918252410023</p>
+                <p>Address: Business centers in UB City, Residency Road</p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

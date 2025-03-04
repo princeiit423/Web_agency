@@ -6,6 +6,7 @@ const ejsMate= require("ejs-mate");
 const bodyParser= require("body-parser");
 const Contact= require("./models/contact.js");
 const Subscriber= require("./models/subscribe.js");
+const Inquiry= require("./models/inquiry.js");
 const dotenv= require("dotenv");
 const app = express();
 dotenv.config();
@@ -70,6 +71,29 @@ app.get("/portfolio",(req,res)=>{
 })
 app.get("/detail",(req,res)=>{
     res.render("detail.ejs");
+})
+app.get("/form",(req,res)=>{
+    res.render("form.ejs");
+})
+app.post("/form", async(req,res,next)=>{
+    try {
+        const { fullName, email, phone, website, projectType, budget, description } = req.body;
+
+        const newInquiry = new Inquiry({
+            fullName,
+            email,
+            phone,
+            website,
+            projectType,
+            budget,
+            description
+        });
+
+        await newInquiry.save();
+        res.status(201).json({ message: "Inquiry submitted successfully!" });
+    } catch (error) {
+        console.log(error);
+    }
 })
 app.post("/subscribe",async(req,res,next)=>{
     // ye functionality work nhi kr rha hai
