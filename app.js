@@ -23,8 +23,10 @@ app.engine("ejs", ejsMate);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 try {
-    mongoose.connect(process.env.DBURL,
-        {useNewUrlParser: true, useUnifiedTopology: true})
+    mongoose.connect(process.env.DBURL)
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
+
 } catch (error) {
     next(error);
 }
