@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 try {
     mongoose.connect(process.env.DBURL)
   .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err));
+  .catch(err => console.error('MongoDB connection error :', err));
 
 } catch (error) {
     next(error);
