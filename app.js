@@ -92,7 +92,7 @@ app.post("/form", async(req,res,next)=>{
         });
 
         await newInquiry.save();
-        res.status(201).json({ message: "Inquiry submitted successfully!" });
+        res.redirect('/')
     } catch (error) {
         console.log(error);
     }
